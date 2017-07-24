@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_06_32"/>
+	<classpathentry kind="lib" path="lib/chardet.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/java-common-159.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="lib/netty-all-4.1.13.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-socketio-1.7.12.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/json-org.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="lib/json-lib-2.2.2-jdk15.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-annotations-2.4.2.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-core-2.4.2.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-databind-2.4.2.jar"/>
+	<classpathentry kind="lib" path="lib/ezmorph-1.0.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

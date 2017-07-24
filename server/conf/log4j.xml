@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="itms %d %-5p (%F:%L) - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="Appender" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${catalina.base}/logs/itms.log" />
+		<param name="Append" value="true" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value=" itms %d %t %-5p %c{2}:%L - %m%n" />
+		</layout>
+	</appender>
+
+	<category name="org.apache" additivity="true">
+		<priority value="error" />
+	</category>
+	<category name="org.springframework" additivity="true">
+		<priority value="info" />
+	</category>
+
+	<category name="org.hibernate.ps.PreparedStatementCache"
+		additivity="true">
+		<priority value="info" />
+		<appender-ref ref="Appender" />
+	</category>
+	<category name="org.hibernate" additivity="true">
+		<priority value="info" />
+		<appender-ref ref="Appender" />
+	</category>
+	<category name="org.hibernate.SQL" additivity="true">
+		<priority value="error" />
+		<appender-ref ref="Appender" />
+	</category>
+	<category name="org.hibernate.type" additivity="true">
+		<priority value="error" />
+		<appender-ref ref="Appender" />
+	</category>
+
+	<root>
+		<priority value="info" />
+		<appender-ref ref="Appender" />
+		<appender-ref ref="STDOUT" />
+	</root>
+</log4j:configuration>
